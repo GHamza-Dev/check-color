@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 75px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px gray;
+    z-index: 9999;
+}
+
+header img {
+    width: 100px;
+    height: 75px;
+    margin-left: 15px;
+}
+
+
+/* Container */
+
+
+/* Center the form*/
+
+.container {
+    width: 100vw;
+}
+
+.container .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.container .form .color,
+.col {
+    width: 170px;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: #0066FF;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 1px gray;
+}
+
+.container .form .hex {
+    height: 15px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.container .form input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 15px;
+    border: solid 4px #0066ff;
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 1px gray;
+    outline: none;
+    font-weight: bolder;
+}
+
+.container .form button {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #ff7f52;
+    border: solid #ff7f52 4px;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 1px gray;
+    margin-left: 9px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.container .form button:hover {
+    background: #000;
+    border: solid #000 4px;
+}
+
+.container .form .upDown {
+    animation: inputAnim 0.5s ease-in-out;
+}
+
+@keyframes inputAnim {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* Custom style for saved colors */
+
+.saved {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-gap: 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: mainAnim 0.5s ease-out forwards;
+}
+
+@keyframes mainAnim {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.main .name {
+    height: 15px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+/*-- -- -- -- -- */
